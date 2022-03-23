@@ -1,5 +1,6 @@
 import AppHome from "@/components/AppHome";
 import AppAbout from "@/components/AppAbout";
+import AppModules from "@/components/AppModules";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -12,6 +13,11 @@ const routes = [
     path: "/about",
     name: "About",
     component: AppAbout,
+  },
+  {
+    path: "/modules",
+    name: "Modules",
+    component: AppModules,
   },
 ];
 

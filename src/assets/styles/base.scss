@@ -19,10 +19,12 @@
     justify-content: flex-start;
 
     .page-container {
+        gap: 1rem;
         width: 300px;
         display: flex;
         height: 300px;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         border: 2px solid purple;
     }

@@ -3,6 +3,7 @@
     <div class="button-container">
       <button @click="goToRoute('Home')">Go to Home</button>
       <button @click="goToRoute('About')">Go to About</button>
+      <button @click="goToRoute('Modules')">Go to Modules</button>
     </div>
     <div class="page-container">
       <router-view />

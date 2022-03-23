@@ -5,7 +5,11 @@
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "vue-cli-service serve",
+    "mk:store": "./scripts/create_store_module.zsh",
+    "rm:store": "./scripts/rm_store.zsh",
+    "mk:comp": "./scripts/create_component.zsh",
+    "rm:comp": "./scripts/rm_component.zsh"
   },
   "dependencies": {
     "core-js": "^3.8.3",

@@ -1,9 +1,18 @@
 import { createStore } from "vuex";
 
-import auth from "./modules/auth";
+const context = require.context("./modules", false, /\.js$/);
+
+const modules = context
+  .keys()
+  .map((file) => [file.slice(2, -3), context(file)])
+  .reduce((modules, [name, module]) => {
+    if (!module.default.namespaced) module.default.namespaced = true;
+    return {
+      ...modules,
+      [name]: module.default,
+    };
+  }, {});
 
 export default createStore({
-  modules: {
-    auth,
-  },
+  modules,
 });
