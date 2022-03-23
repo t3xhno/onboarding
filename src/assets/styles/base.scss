@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    gap: 100px;
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    background: #333;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .page-container {
+        width: 300px;
+        display: flex;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid purple;
+    }
+
+    .button-container {
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            background: green;
+            border-radius: 1rem;
+        }
+    }
+}

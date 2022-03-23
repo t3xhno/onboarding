@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="app-container">
+    <div class="button-container">
+      <button @click="goToRoute('Home')">Go to Home</button>
+      <button @click="goToRoute('About')">Go to About</button>
+    </div>
+    <div class="page-container">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import { useRouter } from "vue-router";
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  setup() {
+    const router = useRouter();
+    const goToRoute = (route) => router.push({ name: route });
+
+    return {
+      goToRoute,
+    };
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="@/assets/styles/base.scss" />
