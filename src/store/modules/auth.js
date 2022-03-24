@@ -26,7 +26,7 @@ export default {
   },
 
   actions: {
-    setWithDelay({ commit, state }, obj) {
+    async setWithDelay({ commit, state }, obj) {
       state.kaca = "hehe state menja prvo";
       setTimeout(() => {
         commit("setByKey", obj);

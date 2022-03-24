@@ -1,0 +1,15 @@
+[
+  {
+    "component": "StepOne",
+    "message": "Hello from step one!"
+  },
+  {
+    "component": "StepOne",
+    "message": "Hello from step two!",
+    "hasQuitButton": true
+  },
+  {
+    "component": "StepOne",
+    "message": "Hello from step three!"
+  }
+]

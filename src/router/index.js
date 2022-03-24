@@ -1,6 +1,7 @@
 import AppHome from "@/components/AppHome";
 import AppAbout from "@/components/AppAbout";
 import AppModules from "@/components/AppModules";
+import TheCactus from "@/components/Cactus/TheCactus";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     path: "/modules",
     name: "Modules",
     component: AppModules,
+  },
+  {
+    path: "/cacti",
+    name: "Cacti",
+    component: TheCactus,
   },
 ];
 

@@ -1,9 +1,13 @@
 <template>
   <div class="app-container">
     <div class="button-container">
-      <button @click="goToRoute('Home')">Go to Home</button>
-      <button @click="goToRoute('About')">Go to About</button>
-      <button @click="goToRoute('Modules')">Go to Modules</button>
+      <button
+        :key="index"
+        @click="goToRoute(entry.name)"
+        v-for="(entry, index) in navEntries"
+      >
+        {{ entry.text }}
+      </button>
     </div>
     <div class="page-container">
       <router-view />
@@ -13,6 +17,8 @@
 
 <script>
 import { useRouter } from "vue-router";
+import navEntries from "@/json/navEntries";
+
 export default {
   name: "App",
   setup() {
@@ -21,6 +27,7 @@ export default {
 
     return {
       goToRoute,
+      navEntries,
     };
   },
 };
