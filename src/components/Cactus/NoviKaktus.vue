@@ -1,11 +1,11 @@
 <template>
-  <div class="step-container">{{ message }}</div>
+  <component :is="component" /> nova komponenta, sigurno sam ja !
 </template>
 
 <script>
 export default {
   props: {
-    message: {
+    component: {
       type: String,
       default: "",
     },

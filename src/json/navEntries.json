@@ -14,5 +14,9 @@
   {
     "name": "Cacti",
     "text": "Go to Cacti"
+  },
+  {
+    "name": "Slots",
+    "text": "Go to Slots"
   }
 ]

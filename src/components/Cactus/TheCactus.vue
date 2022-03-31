@@ -2,28 +2,33 @@
   {{ renderComponent }}
   <component
     :is="renderComponent"
+    :component="cacti[currentStep].childComp"
     :message="cacti[currentStep].message"
     :hasQuitButton="cacti[currentStep].hasQuitButton"
   />
   {{ deepRef }}
   {{ currentStep }}
   <button @click="incrementStep()">Inc</button>
-  <button @click="changeName('hehe xd')">Change name</button>
+  <button @click="changeName('Novo ime')">Change name</button>
 </template>
 
 <script>
 import cacti from "@/json/cacti";
 import { ref, reactive, computed } from "vue";
-import StepOne from "@/components/Cactus/StepOne";
+import ChildComp from "@/components/Cactus/ChildComp";
+import CactusStep from "@/components/Cactus/CactusStep";
+import NovaKomponenta from "@/components/Cactus/CactusStep";
 
 export default {
   components: {
-    StepOne,
+    ChildComp,
+    CactusStep,
+    NovaKomponenta,
   },
   setup() {
     const currentStep = ref(0);
     const deepRef = reactive({
-      name: "Marko",
+      name: "Petar",
       lastName: "Lazic",
     });
 

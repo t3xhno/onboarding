@@ -1,15 +1,20 @@
 [
   {
-    "component": "StepOne",
+    "component": "CactusStep",
     "message": "Hello from step one!"
   },
   {
-    "component": "StepOne",
+    "component": "CactusStep",
     "message": "Hello from step two!",
     "hasQuitButton": true
   },
   {
-    "component": "StepOne",
+    "component": "CactusStep",
     "message": "Hello from step three!"
+  },
+  {
+    "component": "NovaKomponenta",
+    "message": "Hello from step 4!",
+    "childComp": "ChildComp"
   }
 ]
