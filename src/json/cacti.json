@@ -13,7 +13,7 @@
     "message": "Hello from step three!"
   },
   {
-    "component": "NovaKomponenta",
+    "component": "NoviKaktus",
     "message": "Hello from step 4!",
     "childComp": "ChildComp"
   }
