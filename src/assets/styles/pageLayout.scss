@@ -1,0 +1,16 @@
+.inner-page-container {
+    gap: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid blue;
+
+    .named-slot-container {
+        top: 0;
+        right: 0;
+        position: absolute;
+        border: 2px solid red;
+    }
+}

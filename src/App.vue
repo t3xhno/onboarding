@@ -8,6 +8,7 @@
       >
         {{ entry.text }}
       </button>
+      <button @click="goToRoute('Slots')">Slots</button>
     </div>
     <div class="page-container">
       <router-view />
